@@ -117,7 +117,7 @@ body {
   top: 0;
   left 0;
   background-color: #0b0b0b;
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
   padding-top: 6rem;
   color: #f7f7f7;
@@ -214,7 +214,7 @@ body {
     width: 20%;
   }
 
-  p {
+  .landing-inner__quote {
     display: none;
   }
 
@@ -235,5 +235,9 @@ body {
 
   #toggle-info {
     margin-top: 0.5rem;
+  }
+
+  .store-info {
+    overflow: scroll;
   }
 }
