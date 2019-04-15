@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Farm City Feed Stores | Coming Soon</title>
-        <link
-            rel="stylesheet"
-            href="css/style.css"
-            type="text/css"
-            media="all"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Farm City Feed Stores | Coming Soon</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <section class="landing">
+      <div class="landing-inner">
+        <img
+          class="landing-inner__logo"
+          src="./img/logo.svg"
+          alt="Farm City Feed Stores"
         />
-    </head>
-    <body>
-        <section class="landing">
-            <div class="landing-inner">
-                <img
-                    class="landing-inner__logo"
-                    src="./img/logo.svg"
-                    alt="Farm City Feed Stores"
-                />
-                <p>New website</p>
-                <h1 class="comingsoon">Coming Soon</h1>
-                <div class="countdown"></div>
-                <button id="info">Store Info</button>
-            </div>
-        </section>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+        <p>New Website</p>
+        <h1 class="comingsoon">Coming Soon</h1>
+        <div class="countdown"></div>
+        <button id="toggle-info">Store Info</button>
+      </div>
+    </section>
+    <section class="store-info">
+      <button class="store-info__close" aria-label="Close Store Info Panel">
+        &times;
+      </button>
+      <h1>Store Locations</h1>
+      <div class="location">
+        <div class="store">
+          <h2 class="store-name">Orlando</h2>
+          <p class="address-street">1610 Atlanta Ave.</p>
+          <p class="address-postalcode">Orlando, FL 32806</p>
+          <h3 class="phone">407-843-7470</h3>
+        </div>
+        <div class="hours">
+          <h3>Store Hours</h3>
+          <p class="hours-weekday">
+            Monday - Friday: <span class="hours-times">8:30am - 5:30pm</span>
+          </p>
+          <p class="hours-saturday">
+            Saturday: <span class="hours-times">8:30am - 4:00pm</span>
+          </p>
+        </div>
+      </div>
+      <div class="location">
+        <div class="store">
+          <h2 class="store-name">Apopka</h2>
+          <p class="address-street">440 S. Park Ave</p>
+          <p class="address-postalcode">Apopka, FL 32703</p>
+          <h3 class="phone">407-889-2822</h3>
+        </div>
+        <div class="hours">
+          <h3>Store Hours</h3>
+          <p class="hours-weekday">
+            Monday - Friday: <span class="hours-times">9:00am - 6:00pm</span>
+          </p>
+          <p class="hours-saturday">
+            Saturday: <span class="hours-times">9:00am - 4:30pm</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>

@@ -36,3 +36,21 @@ const intvl = setInterval(() => {
     countdown.innerHTML = "Launched!";
   }
 }, 1000);
+
+document.getElementById("toggle-info").addEventListener("click", () => {
+  toggleStoreInfo();
+});
+
+document.querySelector(".store-info__close").addEventListener("click", () => {
+  toggleStoreInfo();
+});
+
+const toggleStoreInfo = () => {
+  const storeInfo = document.querySelector(".store-info");
+
+  if (storeInfo.classList.contains("active")) {
+    storeInfo.classList.remove("active");
+  } else {
+    storeInfo.classList.add("active");
+  }
+};

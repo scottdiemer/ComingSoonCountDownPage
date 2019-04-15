@@ -83,7 +83,7 @@ body {
   font-size: 50%;
 }
 
-#info {
+#toggle-info {
   height: 6rem;
   width: 25rem;
   outline: none;
@@ -99,14 +99,74 @@ body {
   opacity: 0.7;
 }
 
-#info:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+#toggle-info:hover {
+  box-shadow: 0 1rem 1.7rem rgba(0, 0, 0, 0.4);
   transform: translateY(-0.4rem);
 }
 
-#info:active {
+#toggle-info:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
   transform: translateY(0);
+}
+
+.store-info {
+  height: 100vh;
+  width: 60vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left 0;
+  background-color: #0b0b0b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6rem;
+  color: #f7f7f7;
+  font-size: 1.8rem;
+  padding: 3rem;
+  text-align: center;
+  line-height: 1.7;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
+
+.store-info__close {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+  font-size: 3.6rem;
+  color: red;
+  outline: none;
+  border: none;
+}
+
+.location {
+  display: flex;
+  margin: 3rem;
+  padding: 3rem;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.store {
+  flex: 50%;
+}
+
+.store-name, .hours > h3 {
+  color: #18b193;
+}
+
+.hours {
+  text-align: center;
+  flex: 50%;
+}
+
+.hours-times {
+  text-align: right;
+}
+
+.active {
+  transform: translateX(0);
 }
 
 @media (max-width: 650px) {
@@ -133,9 +193,19 @@ body {
     padding: 10px;
   }
 
-  #info {
+  #toggle-info {
     width: 80%;
     margin-top: 2rem;
+  }
+
+  .location {
+    flex-direction: column;
+  }
+
+  .store-info {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -148,9 +218,10 @@ body {
     display: none;
   }
 
-  #info {
+  #toggle-info {
     margin-top: 2.5rem;
   }
+
 }
 
 @media (max-height: 400px) {
@@ -162,7 +233,7 @@ body {
     display: none;
   }
 
-  #info {
+  #toggle-info {
     margin-top: 0.5rem;
   }
 }
