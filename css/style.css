@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -222,6 +222,10 @@ body {
     margin-top: 2.5rem;
   }
 
+  .store-info {
+    overflow: scroll;
+  }
+
 }
 
 @media (max-height: 400px) {
@@ -237,7 +241,4 @@ body {
     margin-top: 0.5rem;
   }
 
-  .store-info {
-    overflow: scroll;
-  }
 }
